@@ -1,0 +1,58 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.75;
+    background-color:#363a3f ;
+    height: 100vh;
+}
+
+.chat__input{
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: #474b53;
+    border-top: 1px solid gray;
+
+}
+
+.chat__input > form > input {
+    padding: 15px;
+    background:transparent;
+    /* width: 100%; */
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+}
+
+.chat__input > form {
+    flex:1;
+}
+
+.chat__inputButton{
+    display: none;
+}
+
+.chat__inputIcons > .MuiSvgIcon-root{
+    padding: 5px;
+}
+
+.chat__messages{
+    flex: 1;
+    overflow-y: scroll;
+}
+.chat__messages::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+.chat__messages::-webkit-scrollbar-track{
+    background-color: #1e1e24;
+}
+
+.chat__messages::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
